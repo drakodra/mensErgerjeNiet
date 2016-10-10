@@ -16,7 +16,6 @@ public class BeginSchermFrame extends JFrame {
     
     public BeginSchermFrame() {
         this.setSize(600,600);
-        
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
     }

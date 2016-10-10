@@ -1,5 +1,6 @@
 package beginScherm;
 
+import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
@@ -33,6 +34,7 @@ class BeginSchermPanel extends JPanel implements ActionListener{
         
         this.add(startBtn);
         this.add(quitBtn);
+        this.setBackground(new Color(237,28,36));
         
     }
     
@@ -42,7 +44,8 @@ class BeginSchermPanel extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent ae){
         Object source = ae.getSource();
         if(source == startBtn){
-            
+            controller.disableView();
+            controller.openSubMenuScherm();
         } else if(source == quitBtn) {
             BeginSchermFrame.getInstance().dispose();
             System.exit(0);
