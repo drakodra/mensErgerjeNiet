@@ -79,7 +79,8 @@ public class HostSpelPanel extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         Object source = ae.getSource();
         if (source == quitBtn) {
-            controller.closeFrame();
+            BeginSchermFrame.getInstance().dispose();
+            System.exit(0);
         } else if (source == okBtn) {
             controller.disableView();
             controller.openAantalSpelersScherm();

@@ -1,5 +1,6 @@
 package hostSpel;
 
+import aantalSpelers.AantalSpelersController;
 import beginScherm.BeginSchermFrame;
 import subMenu.SubMenuController;
 
@@ -18,11 +19,6 @@ public class HostSpelController {
         frame.setVisible(true);
     }
     
-    public void closeFrame() {
-        BeginSchermFrame.getInstance().dispose();
-        System.exit(0);
-    }
-    
     public void disableView() {
         panel.setVisible(false);
         BeginSchermFrame.getInstance().remove(panel);
@@ -33,7 +29,7 @@ public class HostSpelController {
     }
     
     public void openAantalSpelersScherm() {
- //       new AantalSpelersController();
+        new AantalSpelersController();
     }
 
 }
